@@ -1,5 +1,5 @@
 .navbar{
-    border-bottom: 2px solid rgb(0, 0, 0, .2);
+    border-bottom: 2px solid rgba(228, 225, 225, 0.2);
 }
 
 .side-bar{
@@ -7,22 +7,25 @@
   position: fixed;
   z-index: 1;
   left: 0;
-  right: 80%;
-  background-color: rgb(248, 249, 250);
+  right: 75%;
+  background-color: rgb(33,37,41,1);
   overflow-x: scroll;
   padding-top: 20px;
   font-size: 1.05vw;
+  color: rgb(255, 255, 255);
 }
 
 #profile-pic{
-    height: 85%;
-    width: 85%;
+    height: 50%;
+    width: 50%;
     border-radius: 50%;
+    border: 3.5px solid rgba(255, 255, 255, 0.219);
 }
 #side-name{
-    padding-left: 8%;
+    /* padding-left: 5%; */
+    
 }
-.side-hr{
+/* .side-hr{
     border: 0;
         border-top-color: initial;
         border-top-style: initial;
@@ -43,7 +46,7 @@
         border-image-repeat: initial;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
+} */
 
 .side-bar a{
     color: rgb(70, 70, 109);
@@ -55,14 +58,37 @@
     text-decoration: none;
     font-weight: 500;
 }
+.side-bar button{
+    width:19vw;
+    font-size:1vw;
+}
+
+.side-icon-dark{
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    margin-right: 2em;
+}
 .side-icon{
-    max-width: 2vw;
-    max-height: 2vw;
+    max-width: 2.5vw;
+    max-height: 2.5vw;
 }
 
 .content{
     position: absolute;
-    left: 20%;
+    left: 25%;
     padding-left: 2%;
     padding-top: 2%;
+}
+
+#home-content{
+    /* font-family: 'Aladin', cursive;
+font-family: 'Bungee Inline', cursive; */
+font-family: 'Gugi', cursive;  
+font-size: 2.5vw; 
+}
+
+.content h1{
+    font-family: 'Bungee Inline', cursive;
 }
