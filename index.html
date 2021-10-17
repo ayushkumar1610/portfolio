@@ -22,15 +22,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" onclick="activeHome()">Home</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#" onclick="activeAchievements()">Achievements</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#" onclick="activeSkills()">Skills</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="activeContact()">Contact</a>
             </li>
           </ul>
         </div>
@@ -38,7 +42,9 @@
   </nav>
 
   <div>
+
     <div class="side-bar">
+
       <div class="container">
         <img id="profile-pic" src="assets/pp_ayu.jpg" alt="Ayush Kumar Pic">
         <h3 style="font-size: 2vw;" id="side-name">Ayush Kumar</h3>
@@ -58,7 +64,30 @@
     </div>
 
     <div class="content" id="home-content">
-      <p>hgjfdgkldfgnblkfkffjadkfmskgj</p>
+
+      <p>
+        <span style="font-size: 5vw;">H</span>i,<br>
+        I'm Ayush Kumar
+      </p>
+      
+    </div>
+
+    <div class="content" id="skills-content" style="display: none;">
+
+      <p>skills content</p>
+
+    </div>
+
+    <div class="content" id="contact-content" style="display: none;">
+
+      <p>contact content</p>
+
+    </div>
+    
+    <div class="content" id="achievements-content" style="display: none;">
+
+      <p>achievements content</p>
+
     </div>
 
   </div>
@@ -66,8 +95,8 @@
 
 
 
-
-  <script></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
     
 </body>
 </html>
