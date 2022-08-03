@@ -28,3 +28,31 @@ function activeAchievements(){
     $('#achievements-content').show();
 
 }
+
+var sideOpen = 0;
+
+function openNav() {
+    if(sideOpen==0){
+      document.getElementById("sidebar").style.width = "21%";
+      document.getElementById("main").style.marginLeft = "21%";
+      sideOpen = 1;
+      document.getElementById("obtn").innerHTML = "&#10094;"
+    }
+    else{
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        sideOpen = 0;
+        document.getElementById("obtn").innerHTML = "&#10095;"
+    }
+}
+
+function closeNav() {
+  document.getElementById("sidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  sideOpen = 0;
+  document.getElementById("obtn").innerHTML = "&#10095;"
+}
+
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});

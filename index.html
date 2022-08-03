@@ -16,10 +16,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Bungee+Inline&family=Gugi&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div id="main">
+  <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <a class="navbar-brand" href="#">Ayush Kumar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,14 +41,15 @@
               <a class="nav-link" href="#" onclick="activeContact()">Contact</a>
             </li>
           </ul>
+          <p class="openbtn" id="obtn" onclick="openNav()">&#10095;</p>
         </div>
       </div>
   </nav>
 
-  <div>
+  
 
-    <div class="side-bar">
-
+    <div class="side-bar" id="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <div align=center>
         <img id="profile-pic" src="assets/pp_ayu.jpg" alt="Ayush Kumar Pic">
         <h3 style="font-size: 2vw;" id="side-name">Ayush Kumar</h3>
@@ -78,9 +79,28 @@
     <div class="content" id="skills-content" style="display: none;">
 
       <h1>Skills</h1><br>
-      <p>skills content</p>
-
+      <div id="pskill">
+        <div class="card" style="width: 8rem;">
+          <img src="assets/java.png" class="card-img-top" alt="JAVA">
+          <!-- <div class="card-body" align="center"> -->
+            <!-- <h5 class="card-title">JAVA</h5> -->
+          <!-- </div> -->
+        </div>
+        <div class="card" style="width: 8rem;">
+          <img src="assets/dsa.png" class="card-img-top" alt="Data structures and algorithms">
+          <!-- <div class="card-body" align="center"> -->
+            <!-- <h5 class="card-title">Data Structure & Algorithms</h5> -->
+          <!-- </div> -->
+        </div>
+        <div class="card" style="width: 8rem;">
+          <img src="https://flyclipart.com/thumb2/python-logo-png-transparent-python-logo-images-205864.png" class="card-img-top" alt="Python">
+          <!-- <div class="card-body" align="center"> -->
+            <!-- <h5 class="card-title">JAVA</h5> -->
+          <!-- </div> -->
+        </div>
+      </div>
     </div>
+      
 
     <div class="content" id="contact-content" style="display: none;">
 
