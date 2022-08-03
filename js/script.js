@@ -37,6 +37,7 @@ function openNav() {
       document.getElementById("main").style.marginLeft = "21%";
       sideOpen = 1;
       document.getElementById("obtn").innerHTML = "&#10094;"
+      myFunction(x)
     }
     else{
         document.getElementById("sidebar").style.width = "0";
@@ -56,3 +57,20 @@ function closeNav() {
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+
+function myFunction(x) {
+  if (x.matches && sideOpen==1) { // If media query matches
+    
+      document.getElementById("sidebar").style.width = "100%";
+      document.getElementById("main").style.marginLeft = "0%";
+  }
+  else if(sideOpen==1){
+      document.getElementById("sidebar").style.width = "21%";
+      document.getElementById("main").style.marginLeft = "21%";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
