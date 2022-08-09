@@ -64,6 +64,13 @@ function myFunction(x) {
     
       document.getElementById("sidebar").style.width = "100%";
       document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("profile-pic").style.height = "75%";
+      document.getElementById("profile-pic").style.width = "75%";
+      document.getElementById("sidebar").style.fontSize = "large";
+      document.getElementById("side-name").style.fontSize = "x-large";
+      document.getElementById("resume-btn").style.fontSize = "large";
+      document.getElementById("resume-btn").style.background = "#198754";
+      document.getElementById("resume-btn").style.color = "white";
   }
   else if(sideOpen==1){
       document.getElementById("sidebar").style.width = "21%";
