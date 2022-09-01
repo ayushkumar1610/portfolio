@@ -12,9 +12,13 @@ html {
   cursor: pointer;
   background-color: rgb(0,0,0,0);
   color: white;
-  padding-right: 25px;
-  padding-top: 10px;
+  padding: 0.5em;
   border: none;
+}
+#sideOpenDiv{
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 50%;
+    position: absolute;
 }
 .navbar-brand{
     font-size: 25px;
@@ -111,8 +115,6 @@ html {
 
 #home-content{
     padding-top: 4rem;
-        /* font-family: 'Aladin', cursive;
-    font-family: 'Bungee Inline', cursive; */
     font-family: 'Gugi', cursive;  
     font-size: 2.5vw; 
 }
@@ -121,10 +123,10 @@ html {
     font-family: 'Bungee Inline', cursive;
 }
 
-#pskill{
-      display: inline-flex;
-  animation: marquee 10s linear infinite;
-}
+/*#pskill{
+    display: inline-flex;
+    animation: marquee 10s linear infinite;
+}*/
 .skill-card{
     margin-right: 2%;
 }
@@ -133,14 +135,14 @@ html {
   display: inline-block;
   animation: marquee 10s linear infinite;
 }*/
-@keyframes marquee {
+/*@keyframes marquee {
   from {
     transform: translateX(-100%);
   }
   to {
     transform: translateX(100%);
   }
-}
+}*/
 
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
