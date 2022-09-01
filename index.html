@@ -17,39 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Bungee+Inline&family=Gugi&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="main">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Ayush Kumar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" onclick="activeHome()">About</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="activeAchievements()">Achievements</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="activeSkills()">Skills</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="activeContact()">Contact</a>
-            </li>
-          </ul>
-          <p class="openbtn" id="obtn" onclick="openNav()">&#10095;</p>
-        </div>
-      </div>
-  </nav>
-
-  
-
-    <div class="side-bar" id="sidebar">
+  <div class="side-bar" id="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <div align=center>
         <img id="profile-pic" src="assets/pp_ayu.jpg" alt="Ayush Kumar Pic">
@@ -67,67 +35,99 @@
       </div>
 
     </div>
-
-    <div class="content" id="home-content">
-      <h1>About <img id="programmer" src="assets/pro.gif"></h1><br>
-
-      <p>
-        Hi,<br>I'm Competitive Programmer and Web Developer. Currently Pursuing my B.Tech degree in 
-        Information Technology (2019-2023). I'm always looking forward for great oppurtunity in I.T. industry.
-      </p>
-      
-    </div>
-
-    <div class="content" id="skills-content" style="display: none;">
-
-      <h1>Skills</h1><br>
-      <div id="marq-skill">
-        <marquee width="100%" direction="right" height="100%">
-          <div id="pskill">
+<div id="main">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ayush Kumar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home-content">About</a>
+            </li>
             
-            <div class="card skill-card" style="width: 8rem;">
-              <img src="assets/java.png" class="card-img-top" alt="JAVA">
-              <!-- <div class="card-body" align="center"> -->
-                <!-- <h5 class="card-title">JAVA</h5> -->
-              <!-- </div> -->
-            </div>
-            <div class="card skill-card" style="width: 8rem;">
-              <img src="assets/dsa.png" class="card-img-top" alt="Data structures and algorithms">
-              <!-- <div class="card-body" align="center"> -->
-                <!-- <h5 class="card-title">Data Structure & Algorithms</h5> -->
-              <!-- </div> -->
-            </div>
-            <div class="card skill-card" style="width: 8rem;">
-              <img src="assets/py.png" class="card-img-top" alt="Python">
-              <!-- <div class="card-body" align="center"> -->
-                <!-- <h5 class="card-title">JAVA</h5> -->
-              <!-- </div> -->
-            </div>
-            <div class="card skill-card" style="width: 8rem;">
-              <img src="assets/spring.png" class="card-img-top" alt="Spring" align="center">
-              <!-- <div class="card-body" align="center"> -->
-                <!-- <h5 class="card-title">JAVA</h5> -->
-              <!-- </div> -->
-            </div>
-          </div>
-        </marquee>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements-content">Achievements</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-content">Skills</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-content">Contact</a>
+            </li>
+          </ul>
+          <p class="openbtn" id="obtn" onclick="openNav()">&#10095;</p>
+        </div>
       </div>
-    </div>
-      
+  </nav>
 
-    <div class="content" id="contact-content" style="display: none;">
+  
 
-      <h1>Contact</h1><br>
-      <p>contact content</p>
-
-    </div>
     
-    <div class="content" id="achievements-content" style="display: none;">
 
-      <h1>Achievements</h1><br>
-      <p>achievements content</p>
+    <div class="content">
+          <div class="content" id="home-content">
+            <h1>About <img id="programmer" src="assets/pro.gif"></h1><br>
 
-    </div>
+            <p>
+              Hi,<br>I'm Competitive Programmer and Web Developer. Currently Pursuing my B.Tech degree in 
+              Information Technology (2019-2023). I'm always looking forward for great oppurtunity in I.T. industry.
+            </p>
+          </div>
+
+        <div class="content" id="skills-content">
+
+          <h1>Skills</h1><br>
+          <div id="marq-skill">
+              <div id="pskill">
+                
+                <div class="card skill-card" style="width: 8rem;">
+                  <img src="assets/java.png" class="card-img-top" alt="JAVA">
+                  <!-- <div class="card-body" align="center"> -->
+                    <!-- <h5 class="card-title">JAVA</h5> -->
+                  <!-- </div> -->
+                </div>
+                <div class="card skill-card" style="width: 8rem;">
+                  <img src="assets/dsa.png" class="card-img-top" alt="Data structures and algorithms">
+                  <!-- <div class="card-body" align="center"> -->
+                    <!-- <h5 class="card-title">Data Structure & Algorithms</h5> -->
+                  <!-- </div> -->
+                </div>
+                <div class="card skill-card" style="width: 8rem;">
+                  <img src="assets/py.png" class="card-img-top" alt="Python">
+                  <!-- <div class="card-body" align="center"> -->
+                    <!-- <h5 class="card-title">JAVA</h5> -->
+                  <!-- </div> -->
+                </div>
+                <div class="card skill-card" style="width: 8rem;">
+                  <img src="assets/spring.png" class="card-img-top" alt="Spring" align="center">
+                  <!-- <div class="card-body" align="center"> -->
+                    <!-- <h5 class="card-title">JAVA</h5> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+          </div>
+        </div>
+          
+
+        <div class="content" id="contact-content">
+
+          <h1>Contact</h1><br>
+          <p>contact content</p>
+
+        </div>
+        
+        <div class="content" id="achievements-content">
+
+          <h1>Achievements</h1><br>
+          <p>achievements content</p>
+
+        </div>
+      </div>
 
   </div>
 
