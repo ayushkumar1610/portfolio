@@ -1,34 +1,3 @@
-function disableAll() {
-    $('#home-content').hide();
-    $('#skills-content').hide();
-    $('#contact-content').hide();
-    $('#achievements-content').hide();
-}
-
-function activeHome(){
-    disableAll();
-    $('#home-content').show();
-
-}
-
-function activeSkills(){
-    disableAll();
-    $('#skills-content').show();
-
-}
-
-function activeContact(){
-    disableAll();
-    $('#contact-content').show();
-
-}
-
-function activeAchievements(){
-    disableAll();
-    $('#achievements-content').show();
-
-}
-
 var sideOpen = 0;
 
 function openNav() {
@@ -52,16 +21,17 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
   sideOpen = 0;
   document.getElementById("obtn").innerHTML = "&#10095;"
+  $('.navbar').show();
 }
 
-$('.navbar-nav>li>a').on('click', function(){
+$('.navbar-nav>li>a, .content, #sidebar').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
 
 function myFunction(x) {
   if (x.matches && sideOpen==1) { // If media query matches
-    
+      $('.navbar').hide();
       document.getElementById("sidebar").style.width = "100%";
       document.getElementById("main").style.marginLeft = "0%";
       document.getElementById("profile-pic").style.height = "75%";
@@ -73,6 +43,7 @@ function myFunction(x) {
       document.getElementById("resume-btn").style.color = "white";
   }
   else if(sideOpen==1){
+      $('.navbar').show();
       document.getElementById("sidebar").style.width = "21%";
       document.getElementById("main").style.marginLeft = "21%";
   }

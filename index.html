@@ -16,58 +16,57 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Bungee+Inline&family=Gugi&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="side-bar" id="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <div align=center>
-        <img id="profile-pic" src="assets/pp_ayu.jpg" alt="Ayush Kumar Pic">
-        <h3 style="font-size: 2vw;" id="side-name">Ayush Kumar</h3>
-        <p>Competitive Programmer | Web Developer</p>
-      </div>
-      
 
-      <div class="container mt-4" id="icon-div" align=center>
-          <p><a href="https://www.github.com/ayushkumar1610" target="_blank"><img class="side-icon-dark" src="assets/github-logo.png" alt=""> </a>
-          <a href="https://www.codechef.com/users/ayushkumar1610" target="_blank"><img class="side-icon-dark" src="assets/chef.jpg" alt="">  </a>
-          <!-- <p><a href="mailto:ayushkumarlhs26@gmail.com" target="_blank"><img class="side-icon" src="assets/gmail.png" alt=""> Gmail Id</a></p> -->
-          <a href="https://www.linkedin.com/in/ayush-kumar-487528194/" target="_blank"><img class="side-icon" src="assets/linkedin.png" alt=""> </a></p>
-          <a href="assets/resume.pdf" target="_blank"><button id="resume-btn" class="btn btn-outline-success">Download Resume</button></a>
-      </div>
-
-    </div>
   <div id="main">
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Ayush Kumar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home-content">About</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#achievements-content">Achievements</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#skills-content">Skills</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-content">Contact</a>
-              </li>
-            </ul>
-            <p class="openbtn" id="obtn" onclick="openNav()">&#10095;</p>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ayush Kumar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home-content">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements-content">Achievements</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-content">Skills</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-content">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    
+    <div class="side-bar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div align=center>
+          <img id="profile-pic" src="assets/pp_ayu.jpg" alt="Ayush Kumar Pic">
+          <h3 style="font-size: 2vw;" id="side-name">Ayush Kumar</h3>
+          <p>Competitive Programmer | Web Developer</p>
+        </div>
+        
 
-      
+        <div class="container mt-4" id="icon-div" align=center>
+            <p><a href="https://www.github.com/ayushkumar1610" target="_blank"><img class="side-icon-dark" src="assets/github-logo.png" alt=""> </a>
+            <a href="https://www.codechef.com/users/ayushkumar1610" target="_blank"><img class="side-icon-dark" src="assets/chef.jpg" alt="">  </a>
+            <!-- <p><a href="mailto:ayushkumarlhs26@gmail.com" target="_blank"><img class="side-icon" src="assets/gmail.png" alt=""> Gmail Id</a></p> -->
+            <a href="https://www.linkedin.com/in/ayush-kumar-487528194/" target="_blank"><img class="side-icon" src="assets/linkedin.png" alt=""> </a></p>
+            <a href="assets/resume.pdf" target="_blank"><button id="resume-btn" class="btn btn-outline-success">Download Resume</button></a>
+        </div>
+    </div>
+
 
     <div class="content">
         <div class="content" id="home-content">
@@ -126,6 +125,9 @@
           <h1>Achievements</h1><br>
           <p>achievements content</p>
         </div>
+    </div>
+    <div id="sideOpenDiv" onclick="openNav()">
+      <p class="openbtn" id="obtn">&#10095;</p>
     </div>
   </div>
 
