@@ -103,6 +103,7 @@ html {
 .content{
     position: relative;
     padding-left: 2%;
+    margin-bottom: 2em;
 }
 
 #programmer{
@@ -111,7 +112,7 @@ html {
     min-width: 95px;
     height: 7%;
     float: right;
-    margin-right: 5%;
+    margin-right: 2%;
     border-radius: 20%;
     border: 3.5px solid rgb(113, 150, 225, .7);
 }
