@@ -106,10 +106,15 @@ html {
 }
 
 #programmer{
-    width: 7%;
+    width: 25vw;
     height: 7%;
     float: right;
     margin-right: 5%;
+    border-radius: 20%;
+    border: 3.5px solid rgb(113, 150, 225, .7);
+}
+#programmer:hover{
+    border: 2.5px solid rgb(0, 0, 0, .7);
 }
 
 #home-content{
@@ -233,7 +238,7 @@ html {
   /*box-shadow:0px 0px 10px rgba(0,0,0,.5);*/
 }
 .timeline h1{
-    color: black;
+    color: #212529;
 }
 .timeline ul{
   list-style-type:none;
@@ -276,7 +281,7 @@ html {
   border-radius:50%;
   left:-16px;
   top:28px;
-  transition:.5s;
+  transition:.8s;
 }
 .timeline ul li:hover{
   background-color:rgb(0, 0, 0, 0.8);
