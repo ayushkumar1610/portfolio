@@ -196,6 +196,9 @@ html {
         width: 10%;
         height: 10%;
     }
+    #home-content{
+        font-size: medium;
+    }
     
 }
 

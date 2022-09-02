@@ -21,7 +21,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
   sideOpen = 0;
   document.getElementById("obtn").innerHTML = "&#10095;"
-  $('.navbar').show();
+  $('.navbar, #achievements-content').show();
 }
 
 $('.navbar-nav>li>a, .content, #sidebar').on('click', function(){
@@ -31,7 +31,7 @@ $('.navbar-nav>li>a, .content, #sidebar').on('click', function(){
 
 function myFunction(x) {
   if (x.matches && sideOpen==1) { // If media query matches
-      $('.navbar').hide();
+      $('.navbar, #achievements-content').hide();
       document.getElementById("sidebar").style.width = "100%";
       document.getElementById("main").style.marginLeft = "0%";
       document.getElementById("profile-pic").style.height = "75%";
@@ -43,7 +43,7 @@ function myFunction(x) {
       document.getElementById("resume-btn").style.color = "white";
   }
   else if(sideOpen==1){
-      $('.navbar').show();
+      $('.navbar, #achievements-content').show();
       document.getElementById("sidebar").style.width = "21%";
       document.getElementById("main").style.marginLeft = "21%";
   }
