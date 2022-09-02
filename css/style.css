@@ -107,6 +107,8 @@ html {
 
 #programmer{
     width: 25vw;
+    min-height: 97px;
+    min-width: 80px;
     height: 7%;
     float: right;
     margin-right: 5%;
@@ -122,6 +124,12 @@ html {
     font-family: 'Gugi', cursive;  
     font-size: 2.5vw; 
     display: inline-block;
+}
+#pcontact{
+    max-width: 50vw;
+}
+#contact-content{
+    margin-bottom: 20px;
 }
 
 .content h1{
