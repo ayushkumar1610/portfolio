@@ -16,6 +16,7 @@
   -webkit-transform: translate(0%, -5%);
   -moz-transform: translate(0%, -5%);
   transform: translate(0%, -5%);
+  height: 225px;
   }
 }
 
