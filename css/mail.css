@@ -11,12 +11,19 @@
 }
 
 @media screen and (max-width: 700px) {
-  .letter-image{
+  /*Enable for mobile*/
+
+  /*.letter-image{
     float: none;
   -webkit-transform: translate(0%, -5%);
   -moz-transform: translate(0%, -5%);
   transform: translate(0%, -5%);
   height: 225px;
+  }*/
+
+  .letter-image{
+    display: none;
+    pointer-events: none;
   }
 }
 
