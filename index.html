@@ -2,266 +2,176 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#191919" />
-  <title>Portfolio-Ayush</title>
-  <link rel="icon" type="image/png" href="assets/fav.png"/>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0A0B10">
+  <meta name="description" content="Ayush Kumar — competitive programmer and web developer.">
+  <title>Ayush Kumar — Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/fav.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Bungee+Inline&family=Gugi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
 
-  <div id="main">
-
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Ayush Kumar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home-content">About</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#achievements-content">Achievements</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#project-content">Projects</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#skills-content">Skills</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-content">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="side-bar" id="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <div align=center>
-          <img id="profile-pic" src="assets/pp_ayu.jpg" alt="Ayush Kumar Pic">
-          <h3 style="font-size: 2vw;" id="side-name">Ayush Kumar</h3>
-          <p>Competitive Programmer | Web Developer</p>
-        </div>
-        
-
-        <div class="container mt-4" id="icon-div" align=center>
-            <p><a href="https://www.github.com/ayushkumar1610" target="_blank"><img class="side-icon-dark" src="assets/github-logo.png" alt=""> </a>
-            <a href="https://www.codechef.com/users/ayushkumar1610" target="_blank"><img class="side-icon-dark" src="assets/chef.jpg" alt="">  </a>
-            <!-- <p><a href="mailto:ayushkumarlhs26@gmail.com" target="_blank"><img class="side-icon" src="assets/gmail.png" alt=""> Gmail Id</a></p> -->
-            <a href="https://www.linkedin.com/in/ayush-kumar-487528194/" target="_blank"><img class="side-icon" src="assets/linkedin.png" alt=""> </a></p>
-            <a href="assets/resume.pdf" target="_blank"><button id="resume-btn" class="glow-on-hover">Download Resume</button></a>
-        </div>
-    </div>
-
-
-    <div class="content">
-        <div class="content" id="home-content">
-          <h1>About <img id="programmer" src="assets/abtpic.jpg"></h1><br>
-          
-          <p>
-            Hi,<br>I'm Competitive Programmer and Web Developer. Currently Pursuing my B.Tech degree in 
-            Information Technology (2019-2023). I'm looking forward for good oppurtunities in I.T. industry.
-          </p>
-        
-        </div>
-
-        <div class="content" id="achievements-content">
-
-          <h1>Achievements</h1><br>
-
-          <main>
-            <ol class="gradient-list">
-              <li>
-                <h4>3 Star | CodeChef</h4>
-                <p>Achieved 3 star rating on competitive programming platform Codechef.</p>
-                <p>Secured Global rank 442 in Starter 7.</p>
-              </li>
-              <li>
-                <h4>100+ Questions | LeetCode</h4>
-                <p>Solved 100+ question of Data Structures and Algorithms on coding platform LeetCode.</p>
-              </li>
-              <li>
-                <h4>Master The Mainframe Challenge-2019 | IBM</h4>
-                <p>Completed all the 3 challenges of Master the Mainframe challenge, a coding challenge organised by IBM.</p>
-              </li>
-            </ol>
-          </main>
-        </div>
-          
-        <div class="content" id="project-content">
-          <h1>Projects</h1>
-          <div class="timeline">
-            <ul>
-              <li>
-                <span>Car Pool</span>
-                <div class="content">
-                  <h3>Web Devlopment Project</h3>
-                  <p>
-                    A web application where people can share their ride to save fuel and enviroment. Features like Map, Authentication and Security has been provided. 
-                  </p>
-                  <p>
-                    Tech Used: Angular, Spring, Java, TypeScript, Git, Sql.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span>Code Log</span>
-                <div class="content">
-                  <h3>Web Development Project</h3>
-                  <p>
-                    A CRUD based web page, where user gets blog like features. This project aims to those user who are interested in coding, users can share code snippets to get suggestions and to help other.
-                  </p>
-                  <p>
-                    Technology used: Django, Python, HTML, CSS, JavaScript, SQLite.
-                  </p>
-                </div>
-              </li>
-              <!-- <li>
-                <span>15th April 2018</span>
-                <div class="content">
-                  <h3>What Is Lorem Ipsum?</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-
-        <div class="content" id="skills-content">
-
-          <h1>Skills</h1><br>
-            <div class="chip">
-              <img src="assets/java.png" alt="java" width="96" height="96">
-                JAVA
-            </div>
-            <div class="chip">
-              <img src="assets/spring.png" alt="spring" width="96" height="96">
-                SPRING
-            </div>
-            <div class="chip">
-              <img src="assets/dsa.png" alt="DSA" width="96" height="96">
-                DATA STRUCTURES
-            </div>
-            <div class="chip">
-              <img src="assets/oops.jpg" alt="oops" width="96" height="96">
-                OOPs
-            </div>
-            <div class="chip">
-              <img src="assets/py.png" alt="python" width="96" height="96">
-                PYTHON
-            </div>
-            <div class="chip">
-              <img src="assets/dsa.png" alt="DSA" width="96" height="96">
-                ALGORITHMS
-            </div>
-            <div class="chip">
-              <img src="assets/html.jpg" alt="html" width="96" height="96">
-                HTML
-            </div>
-            <div class="chip">
-              <img src="assets/git.png" alt="git" width="96" height="96">
-                GIT
-            </div>
-            <div class="chip">
-              <img src="assets/sql.jpg" alt="sql" width="96" height="96">
-                SQL
-            </div>
-            <div class="chip">
-              <img src="assets/css.png" alt="css" width="96" height="96">
-                CSS
-            </div>
-            <div class="chip">
-              <img src="assets/rest.png" alt="rest api" width="96" height="96">
-                REST APIs
-            </div>
-            <div class="chip">
-              <img src="assets/ng.png" alt="angular" width="96" height="96">
-                ANGULAR
-            </div>
-            <div class="chip">
-              <img src="assets/js.jpg" alt="JS" width="96" height="96">
-                JAVASCRIPT
-            </div>
-        </div>
-
-
-        <div class="content" id="contact-content">
-
-          <h1>Contact</h1><br>
-          
-          <div id="pcontact">
-            <h4>Wanted To Connect ?</h4>
-            <p>Drop a mail or let's connect on LinkedIn.</p>
-            <p>
-              <a href="mailto:ayushkumarlhs26@gmail.com" target="_blank"><img class="side-icon" src="assets/gmail.png" alt="">&nbsp Mail Me</a>
-            </p>
-          </div>
-          <div class="letter-image">
-            <div class="animated-mail">
-              <div class="back-fold"></div>
-              <div class="letter">
-                <div class="letter-border"></div>
-                <div class="letter-title"></div>
-                <div class="letter-context"></div>
-                <div class="letter-stamp">
-                  <div class="letter-stamp-inner"></div>
-                </div>
-              </div>
-              <div class="top-fold"></div>
-              <div class="body"></div>
-              <div class="left-fold"></div>
-            </div>
-            <div class="shadow"></div>
-          </div>
-
-        </div>
-
-        <div class="rotating-text">
-          <p>Hey! Ayush is</p>
-          <p>
-            <span class="word alizarin">developer.</span>
-            <span class="word wisteria">awesome.</span>
-            <span class="word peter-river">creative.</span>
-            <span class="word emerald">fabulous.</span>
-            <span class="word sun-flower">interesting.</span>
-          </p>
-        </div>
-
-    </div>
-    <div id="sideOpenDiv" onclick="openNav()">
-      <p class="openbtn" id="obtn">&#10095;</p>
-    </div>
+  <div class="loader" aria-hidden="true">
+    <span class="loader-text">ayush<span class="accent">.</span></span>
   </div>
 
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">ayush<span class="accent">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="btn btn-primary btn-sm magnetic" href="#contact">Let's talk</a>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section id="top" class="hero">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="badge rise" style="--d:.1s"><span class="live"></span>Open to opportunities</p>
+          <h1 class="hero-title" aria-label="Ayush Kumar.">
+            <span class="line"><span class="split">Ayush</span></span>
+            <span class="line"><span class="split">Kumar</span><span class="accent split-dot">.</span></span>
+          </h1>
+          <p class="hero-role rise" style="--d:.9s">
+            &gt; competitive programmer &amp; <span class="accent typed" data-words='["web developer","problem solver","Java enthusiast","Angular + Spring dev"]'></span><span class="caret accent">_</span>
+          </p>
+          <div class="hero-cta rise" style="--d:1.05s">
+            <a class="btn btn-primary magnetic" href="#work">See my work</a>
+            <a class="btn btn-ghost magnetic" href="assets/resume.pdf" target="_blank" rel="noopener">Download resume</a>
+          </div>
+        </div>
+        <div class="hero-photo rise" style="--d:.6s">
+          <div class="photo floaty tilt">
+            <svg class="ring" viewBox="0 0 320 320" aria-hidden="true">
+              <circle cx="160" cy="160" r="154" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 14"/>
+            </svg>
+            <img src="assets/pp_ayu.jpg" alt="Portrait of Ayush Kumar">
+            <span class="photo-tag">3★ CodeChef</span>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about"><span></span></a>
+    </section>
 
-    
-</body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Java</span><i>✦</i><span>Spring</span><i>✦</i><span>Angular</span><i>✦</i><span>Python</span><i>✦</i><span>Data Structures</span><i>✦</i><span>REST APIs</span><i>✦</i><span>SQL</span><i>✦</i>
+        <span>Java</span><i>✦</i><span>Spring</span><i>✦</i><span>Angular</span><i>✦</i><span>Python</span><i>✦</i><span>Data Structures</span><i>✦</i><span>REST APIs</span><i>✦</i><span>SQL</span><i>✦</i>
+      </div>
+    </div>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <p class="eyebrow reveal">01 / about</p>
+        <p class="about-text reveal words">
+          I solve problems for fun on <span class="accent">CodeChef</span> and LeetCode, and build full-stack web apps with
+          <span class="violet">Angular</span> and <span class="violet">Spring</span>. B.Tech in Information Technology, 2019–2023.
+        </p>
+      </div>
+      <div class="container stats">
+        <div class="card stat reveal tilt" style="--d:0s">
+          <div class="stat-num"><span class="count" data-to="3">0</span>★</div>
+          <h3>CodeChef rating</h3>
+          <p>Global rank 442 in Starters 7.</p>
+        </div>
+        <div class="card stat reveal tilt" style="--d:.12s">
+          <div class="stat-num"><span class="count" data-to="100">0</span>+</div>
+          <h3>LeetCode problems</h3>
+          <p>Data structures and algorithms, solved.</p>
+        </div>
+        <div class="card stat reveal tilt" style="--d:.24s">
+          <div class="stat-num"><span class="count" data-to="3">0</span>/3</div>
+          <h3>IBM Master the Mainframe</h3>
+          <p>All three challenges completed, 2019.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <p class="eyebrow reveal">02 / selected work</p>
+        <h2 class="section-title reveal">Things I've built</h2>
+        <div class="projects">
+          <article class="card project reveal tilt" style="--d:0s">
+            <div class="project-top">
+              <span class="mono muted">web app</span>
+              <svg class="arrow" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </div>
+            <h3>Car Pool</h3>
+            <p>Ride-sharing to save fuel and the environment — maps, authentication and security built in.</p>
+            <ul class="tags">
+              <li>Angular</li><li>Spring</li><li>Java</li><li>TypeScript</li><li>SQL</li>
+            </ul>
+          </article>
+          <article class="card project reveal tilt" style="--d:.12s">
+            <div class="project-top">
+              <span class="mono muted">web app</span>
+              <svg class="arrow" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </div>
+            <h3>Code Log</h3>
+            <p>A blog-style CRUD app where coders share snippets, get suggestions and help each other.</p>
+            <ul class="tags">
+              <li>Django</li><li>Python</li><li>JavaScript</li><li>SQLite</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow reveal">03 / toolkit</p>
+        <h2 class="section-title reveal">Skills</h2>
+        <ul class="chips">
+          <li class="chip">Java</li>
+          <li class="chip">Spring</li>
+          <li class="chip">Data Structures</li>
+          <li class="chip">Algorithms</li>
+          <li class="chip">OOPs</li>
+          <li class="chip">Python</li>
+          <li class="chip">HTML</li>
+          <li class="chip">CSS</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">Angular</li>
+          <li class="chip">REST APIs</li>
+          <li class="chip">SQL</li>
+          <li class="chip">Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="eyebrow reveal">04 / contact</p>
+        <h2 class="contact-title reveal">Let's build<br><a class="uline" href="mailto:ayushkumarlhs26@gmail.com">something.</a></h2>
+        <div class="socials reveal">
+          <a class="btn btn-ghost magnetic" href="https://www.github.com/ayushkumar1610" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost magnetic" href="https://www.linkedin.com/in/ayush-kumar-487528194/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost magnetic" href="https://www.codechef.com/users/ayushkumar1610" target="_blank" rel="noopener">CodeChef</a>
+        </div>
+        <p class="footer mono muted">© Ayush Kumar — designed &amp; built with care</p>
+      </div>
+    </section>
+  </main>
+
   <script src="js/script.js"></script>
-
-  <link rel="stylesheet" href="css/mail.css">
-  <link rel="stylesheet" href="css/rotateTxt.css">
-  <script src="js/rotateTxt.js"></script>
+</body>
 </html>
