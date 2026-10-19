@@ -147,6 +147,21 @@
   }, { passive: true });
   onScroll();
 
+  // ---------- Theme toggle ----------
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  let accentRgb = '';
+  const readAccent = () => {
+    accentRgb = getComputedStyle(root).getPropertyValue('--accent-rgb').trim();
+  };
+  readAccent();
+  document.querySelector('.theme-toggle').addEventListener('click', () => {
+    const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+    root.dataset.theme = next;
+    themeMeta.content = next === 'light' ? '#F6F5F0' : '#0A0B10';
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    readAccent();
+  });
+
   // ---------- Mobile nav ----------
   const nav = document.querySelector('.nav');
   const toggle = document.querySelector('.nav-toggle');
@@ -266,14 +281,14 @@
         const b = points[j];
         const d = Math.hypot(a.x - b.x, a.y - b.y);
         if (d < 130) {
-          ctx.strokeStyle = `rgba(200, 245, 96, ${0.14 * (1 - d / 130)})`;
+          ctx.strokeStyle = `rgba(${accentRgb}, ${0.14 * (1 - d / 130)})`;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
           ctx.stroke();
         }
       }
-      ctx.fillStyle = 'rgba(200, 245, 96, .5)';
+      ctx.fillStyle = `rgba(${accentRgb}, .5)`;
       ctx.beginPath();
       ctx.arc(a.x, a.y, 1.4, 0, Math.PI * 2);
       ctx.fill();
